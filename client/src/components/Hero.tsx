@@ -1,6 +1,6 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/generated_images/Marketing_team_collaboration_workspace_5273c014.png";
+import img from '../assets/generated_images/Marketing_team_collaboration_workspace_5273c014.png'
 
 export default function Hero() {
   const scrollToServices = () => {
