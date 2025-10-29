@@ -1,4 +1,4 @@
-// vite.config.ts (at repo root)
+// vite.config.ts (repo root)
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'node:path'
@@ -7,16 +7,16 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
-  root: 'client',                 // the app lives in /client
+  root: 'client',                      // app lives in /client
   publicDir: 'public',
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'client/src'), // <-- alias @ → /client/src
+      '@': path.resolve(__dirname, 'client/src'), // support "@/..." imports
     },
   },
   build: {
-    outDir: 'dist',               // output into /client/dist
+    outDir: '../dist',                 // write final site to /dist (repo root)
     emptyOutDir: true,
   },
 })
