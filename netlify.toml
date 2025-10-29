@@ -1,7 +1,6 @@
 [build]
-  base = "client"
-  publish = "dist"
-  command = "npm install && npm run build"
+  command = "npm ci && npm run build:client"  # build from repo root, client only
+  publish = "dist"                            # we output to /dist (repo root)
 
 [[redirects]]
   from = "/*"
