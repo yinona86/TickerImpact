@@ -15,7 +15,7 @@ export default function Hero() {
     <section className="relative h-screen w-full flex items-end overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${img})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-tr from-black via-black/70 to-primary/20" />
       
